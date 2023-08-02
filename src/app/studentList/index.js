@@ -8,7 +8,7 @@ export default function StudentList() {
     <div>
       {arr.map((val) => {
         return (
-          <div onClick={() => router.push(`/about/aboutStudent/${val}`)}>
+          <div onClick={() => router.push(`/about/aboutStudent/${val}`)} key={val}>
             {val}
           </div>
         );

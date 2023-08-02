@@ -1,5 +1,4 @@
 "use client";
-import "./style.css";
 export default function ProductListTable(props) {
   return (
     <div>

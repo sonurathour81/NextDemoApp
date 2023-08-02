@@ -7,7 +7,6 @@ export default function AboutStudent() {
   return (
     <div>
       <h1>About Student</h1>
-      <button onClick={() => router.push("/")}>Go to home</button>
       <h3>Student List</h3>
       <StudentList />
     </div>

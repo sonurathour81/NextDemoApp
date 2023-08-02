@@ -6,7 +6,6 @@ export default function AboutCollege() {
   return (
     <div>
       <h1>About College</h1>
-      <button onClick={() => router.push("/")}>Go to home</button>
     </div>
   );
 }

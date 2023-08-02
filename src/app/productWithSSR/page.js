@@ -12,7 +12,6 @@ export default async function Product() {
 
   return (
     <div>
-      <Link href={"/"}>Go to Home</Link>
       <h1>Product List</h1>
       <ProductListTable data={apiData} />
     </div>
