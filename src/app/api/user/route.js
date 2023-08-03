@@ -1,7 +1,7 @@
 import { user } from "@/util/db";
 import { NextResponse } from "next/server";
 
-export function GET(request) {
+export async function GET(request) {
   let dbData = user;
   return NextResponse.json(dbData, { status: "201" });
 }

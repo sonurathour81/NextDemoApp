@@ -10,6 +10,8 @@ export default function NabBar() {
       <Link href="/productWithSSR">Product With SSR</Link>
       <Link href="/users">Users</Link>
       <Link href="/addUser">Add User</Link>
+      <Link href="/productListWithDB">Product list</Link>
+      <Link href="/productListWithDB/addProduct">Add Product</Link>
     </div>
   );
 }

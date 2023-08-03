@@ -5,6 +5,7 @@ export default function ProductListTable(props) {
       <table>
         <thead>
           <tr>
+            <th>Title</th>
             <th>Brand</th>
             <th>Category</th>
             <th>Description</th>
@@ -18,7 +19,8 @@ export default function ProductListTable(props) {
         <tbody>
           {props.data?.map((val, idx) => {
             return (
-              <tr key={idx} onClick={() => alert(`Brand: ${val.brand}`)}>
+              <tr key={idx}>
+                <td>{val.title}</td>
                 <td>{val.brand}</td>
                 <td>{val.category}</td>
                 <td>{val.description}</td>
