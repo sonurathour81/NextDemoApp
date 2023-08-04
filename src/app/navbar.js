@@ -12,6 +12,7 @@ export default function NabBar() {
       <Link href="/addUser">Add User</Link>
       <Link href="/productListWithDB">Product list</Link>
       <Link href="/productListWithDB/addProduct">Add Product</Link>
+      <Link href="/counter">Counter with redux</Link>
     </div>
   );
 }

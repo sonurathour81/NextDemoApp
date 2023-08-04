@@ -1,7 +1,7 @@
-import Link from "next/link";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import NabBar from "./navbar";
+import ReduxProvider from "./reduxProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
@@ -13,9 +13,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <NabBar />
-
-        {children}
+        <ReduxProvider>
+          <NabBar />
+          {children}
+        </ReduxProvider>
       </body>
     </html>
   );

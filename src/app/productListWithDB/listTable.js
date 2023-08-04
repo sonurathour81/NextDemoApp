@@ -1,9 +1,14 @@
 "use client";
 import { useRouter } from "next/navigation";
 import { deleteProduct } from "./staticFun";
+import { useEffect, useState } from "react";
 
 export default function ListTable({ data }) {
   const router = useRouter();
+  const [dataList, setDataList] = useState([]);
+  useEffect(() => {
+    setDataList([...data]);
+  }, [data]);
 
   let renderDiv = (val) => {
     return (
@@ -54,7 +59,7 @@ export default function ListTable({ data }) {
           <th>Action</th>
         </tr>
       </thead>
-      <tbody>{data.map((val) => renderDiv(val))}</tbody>
+      <tbody>{dataList.map((val) => renderDiv(val))}</tbody>
     </table>
   );
 }
